@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CORONG寇容 - 东南亚美妆电商平台</title>
+  <!-- 引入公共资源 + 公共头部 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* 全局样式：修复间距和标题样式 */
+    body {
+      padding-top: 80px; /* 给固定导航栏留出空间 */
+      background-color: #f9f6f1;
+    }
+    .py-8 {
+      padding-top: 4rem !important;
+      padding-bottom: 4rem !important;
+    }
+    .mt-10 {
+      margin-top: 5rem !important;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+    /* 卡片悬停效果 */
+    .video-card {
+      transition: all 0.3s ease;
+      border: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .video-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+   <!-- 公共头部：已补全可点击的导航链接 + 新增分行副标题 -->
+<header class="navbar navbar-expand-lg fixed-top bg-white shadow-sm py-3">
+  <div class="container">
+    <a class="navbar-brand text-danger text-decoration-none" href="index.html">
+      <span class="fw-bold fs-4 d-block">CORONG 蔻容</span>
+      <span class="fs-7 text-dark opacity-70 d-block" style="font-size: 0.7rem !important;">东南亚美妆电商平台</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">首页</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">产品系列</a></li>
+        <li class="nav-item"><a class="nav-link" href="reviews.html">真实测评</a></li>
+        <li class="nav-item"><a class="nav-link" href="technology.html">技术解析</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+    <!-- 核心：视频轮播区 -->
+    <section class="bg-dark text-white py-5">
+      <div class="container">
+        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- 轮播项1 -->
+            <div class="carousel-item active">
+              <div class="ratio ratio-16x9">
+                <video class="d-block w-100 btn-play" controls poster="https://picsum.photos/1200/675?random=10">
+                  <source src="#" type="video/mp4">
+                  您的浏览器不支持视频播放
+                </video>
+              </div>
+              <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50 p-3 rounded">
+                <h3>印尼油皮实测 | 12小时持妆粉底液</h3>
+                <p>原相机无美颜 · 出汗/用餐全程实测 · 防汗成膜技术</p>
+              </div>
+            </div>
+            <!-- 轮播项2 -->
+            <div class="carousel-item">
+              <div class="ratio ratio-16x9">
+                <video class="d-block w-100 btn-play" controls poster="https://picsum.photos/1200/675?random=11">
+                  <source src="#" type="video/mp4">
+                  您的浏览器不支持视频播放
+                </video>
+              </div>
+              <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50 p-3 rounded">
+                <h3>泰国干皮亲测 | 保湿妆前乳8小时体验</h3>
+                <p>卡粉测试 · 底妆服帖度 · 智能保湿技术</p>
+              </div>
+            </div>
+            <!-- 轮播项3 -->
+            <div class="carousel-item">
+              <div class="ratio ratio-16x9">
+                <video class="d-block w-100 btn-play" controls poster="https://picsum.photos/1200/675?random=12">
+                  <source src="#" type="video/mp4">
+                  您的浏览器不支持视频播放
+                </video>
+              </div>
+              <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50 p-3 rounded">
+                <h3>全肤质实测 | 定妆散粉防水防汗测试</h3>
+                <p>油皮/干皮/混合皮 · 6小时定妆效果 · 控油不卡粉</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">上一个</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">下一个</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 核心：产品系列快速入口 -->
+    <section class="py-8 bg-light">
+      <div class="container">
+        <h2 class="section-title">产品系列快速入口</h2>
+        <div class="row g-4 justify-content-center">
+          <!-- 快速入口1：智能粉底液 -->
+          <div class="col-md-3 col-sm-6 text-center">
+            <!-- 修复链接：指向 products.html -->
+            <a href="products.html" class="text-decoration-none text-dark">
+              <div class="bg-white p-4 rounded-circle mb-3 mx-auto" style="width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                <img src="https://picsum.photos/60/60?random=20" alt="智能粉底液" style="width: 60px; height: 60px;">
+              </div>
+              <h5 class="fw-bold">智能粉底液</h5>
+              <p class="text-muted small">12h持妆 · 防汗成膜 · 多色号</p>
+            </a>
+          </div>
+          <!-- 快速入口2：保湿妆前乳 -->
+          <div class="col-md-3 col-sm-6 text-center">
+            <!-- 修复链接：指向 products.html -->
+            <a href="products.html" class="text-decoration-none text-dark">
+              <div class="bg-white p-4 rounded-circle mb-3 mx-auto" style="width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                <img src="https://picsum.photos/60/60?random=21" alt="保湿妆前乳" style="width: 60px; height: 60px;">
+              </div>
+              <h5 class="fw-bold">保湿妆前乳</h5>
+              <p class="text-muted small">保湿服帖 · 防卡粉 · 打底神器</p>
+            </a>
+          </div>
+          <!-- 快速入口3：定妆散粉 -->
+          <div class="col-md-3 col-sm-6 text-center">
+            <!-- 修复链接：指向 products.html -->
+            <a href="products.html" class="text-decoration-none text-dark">
+              <div class="bg-white p-4 rounded-circle mb-3 mx-auto" style="width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                <img src="https://picsum.photos/60/60?random=22" alt="定妆散粉" style="width: 60px; height: 60px;">
+              </div>
+              <h5 class="fw-bold">定妆散粉</h5>
+              <p class="text-muted small">控油定妆 · 防水防汗 · 细腻服帖</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 辅助：热门测评推荐 -->
+    <section class="py-8">
+      <div class="container">
+        <h2 class="section-title">热门真实测评</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4 col-sm-6">
+            <div class="card video-card">
+              <div class="ratio ratio-16x9">
+                <img src="https://picsum.photos/600/338?random=30" class="card-img-top" alt="热门测评1">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">泰国油皮 | 粉底液12小时实测</h5>
+                <p class="card-text text-muted small">博主：XX | 地区：泰国 | 肤质：油皮</p>
+                <!-- 修复链接：指向 reviews.html -->
+                <a href="reviews.html" class="btn btn-sm btn-outline-primary">查看完整测评</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <script>
+    // 基础视频播放控制
+    document.querySelectorAll('.btn-play').forEach(video => {
+      video.addEventListener('play', () => {
+        const carousel = new bootstrap.Carousel(document.querySelector('#videoCarousel'));
+        carousel.pause();
+      });
+    });
+  </script>
+
+
+  <!-- 公共底部 -->
+  <footer class="bg-dark text-white py-5 mt-10">
+    <div class="container text-center">
+      <p>© 2026 寇容科技有限公司 版权所有</p>
+      <p class="text-muted small mb-0">东南亚原相机真实美妆测评平台</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品技术解析 - CORONG寇容</title>
+  <!-- 引入公共资源 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>/* 复制上述公共全局样式 *//* 全局样式：修复间距和标题样式 */
+    body {
+      padding-top: 80px; /* 给固定导航栏留出空间 */
+      background-color: #f9f6f1;
+    }
+    .py-8 {
+      padding-top: 4rem !important;
+      padding-bottom: 4rem !important;
+    }
+    .mt-10 {
+      margin-top: 5rem !important;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+    /* 卡片悬停效果 */
+    .video-card {
+      transition: all 0.3s ease;
+      border: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .video-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }</style>
+</head>
+<body>
+  <!-- 公共头部 -->
+    <!-- 公共头部：已补全可点击的导航链接 + 新增分行副标题 -->
+<header class="navbar navbar-expand-lg fixed-top bg-white shadow-sm py-3">
+  <div class="container">
+    <a class="navbar-brand text-danger text-decoration-none" href="index.html">
+      <span class="fw-bold fs-4 d-block">CORONG 蔻容</span>
+      <span class="fs-7 text-dark opacity-70 d-block" style="font-size: 0.7rem !important;">东南亚美妆电商平台</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">首页</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">产品系列</a></li>
+        <li class="nav-item"><a class="nav-link" href="reviews.html">真实测评</a></li>
+        <li class="nav-item"><a class="nav-link" href="technology.html">技术解析</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+  <main class="py-8 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-8">核心技术解析 · 用科技打造持妆美妆</h2>
+
+      <!-- 技术解析1：防汗成膜技术（核心） -->
+      <section class="card border-0 shadow-sm mb-8 bg-white">
+        <div class="card-body p-5">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <h3 class="h4 fw-bold mb-3">🌧️ 独家防汗成膜技术</h3>
+              <p class="mb-3">专为东南亚高温高湿气候研发，突破传统持妆技术瓶颈，接触汗液后快速形成「微纳米防水膜」，牢牢锁住妆容，拒绝脱妆、氧化、花妆！</p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> 成膜速度快：上妆后5分钟快速成膜，无需等待</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> 防水抗油：有效抵御汗液、油脂、雨水，12小时不破损</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> 透气不闷痘：微米级膜层，不堵塞毛孔，油皮/痘肌友好</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> 不卡纹不浮粉：膜层与肌肤贴合，底妆服帖自然</li>
+              </ul>
+              <a href="/products?type=foundation" class="btn btn-primary mt-4">查看对应产品</a>
+            </div>
+            <div class="col-lg-6">
+              <div class="ratio ratio-16x9">
+                <img src="{{ 防汗成膜技术动画GIF }}" class="img-fluid rounded shadow" alt="防汗成膜技术">
+                <!-- 开发可替换为视频：<video controls src="{{ 技术视频地址 }}"></video> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 技术解析2：智能色号匹配技术 -->
+<section class="card border-0 shadow-sm mb-8 bg-white">
+  <div class="card-body p-5">
+    <div class="row g-4 align-items-center flex-lg-row-reverse">
+      <div class="col-lg-6">
+        <h3 class="h4 fw-bold mb-3">🎨 东南亚肤色专属 - 智能色号匹配技术</h3>
+        <p class="mb-3">基于东南亚10万+肤色样本采集，打造6大核心色号，精准适配印尼、泰国等不同地区肤色，拒绝假白、暗沉，实现「天生好皮」自然妆效！</p>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> 黄皮友好：所有色号均为黄调基底，贴合东南亚肤色</li>
+          <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> 智能分级：按肤色深浅分为浅/中/深三个等级，精准匹配</li>
+          <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> 不氧化：添加抗氧化因子，色号12小时不暗沉、不发黄</li>
+          <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> AR选色：支持AR智能测肤，一键匹配最适合你的色号</li>
+        </ul>
+        <!-- 只改这行按钮的href，指向color-match.html页面 -->
+        <a href="color-match.html" class="btn btn-primary mt-4">体验AR智能选色</a>
+      </div>
+      <div class="col-lg-6">
+        <div class="ratio ratio-16x9">
+          <img src="{{ 智能色号匹配GIF }}" class="img-fluid rounded shadow" alt="智能色号匹配技术">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- 技术解析3：保湿控油双效技术 -->
+      <section class="card border-0 shadow-sm bg-white">
+        <div class="card-body p-5">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <h3 class="h4 fw-bold mb-3">💧 全肤质适配 - 保湿控油双效技术</h3>
+              <p class="mb-3">创新「分区护理」配方，干皮区域添加玻尿酸保湿因子，油皮区域添加微米级控油粉末，实现「干皮不卡粉，油皮不泛油」的全肤质适配！</p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> 玻尿酸保湿：深层补水，抚平干纹，底妆服帖</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> 微孔控油粉末：吸附多余油脂，保持妆面清爽</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> 无酒精配方：温和不刺激，敏感肌可放心使用</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> 四季通用：适配东南亚干湿两季，持妆效果不受气候影响</li>
+              </ul>
+              <a href="/reviews" class="btn btn-primary mt-4">查看全肤质实测</a>
+            </div>
+            <div class="col-lg-6">
+              <div class="ratio ratio-16x9">
+                <img src="{{ 保湿控油技术GIF }}" class="img-fluid rounded shadow" alt="保湿控油双效技术">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- 公共底部 -->
+  <footer class="bg-dark text-white py-5 mt-10">
+    <div class="container text-center">
+      <p>© 2026 寇容科技有限公司 版权所有</p>
+      <p class="text-muted small mb-0">东南亚原相机真实美妆测评平台</p>
+    </div>
+  </footer>
+
+</body>
+</html>
