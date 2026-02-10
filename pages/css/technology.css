@@ -1,0 +1,105 @@
+/* technology.css - 技术解析页面特定样式 */
+
+/* 背景统一 */
+main.py-8.bg-light {
+  background-color: #FAF9F7 !important; /* 主内容区背景同步 */
+}
+
+/* 技术卡片样式 */
+.tech-card {
+  background-color: #FFFFFF !important; /* 卡片背景同步米白 */
+  border: 1px solid #FAF9F7 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 12px rgba(232, 196, 196, 0.15) !important;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 卡片顶部渐变装饰条 */
+.tech-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #E8C4C4, #D8A7B1);
+}
+
+/* 卡片hover效果 */
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(232, 196, 196, 0.2) !important;
+}
+
+/* 列表样式 - 移除点、统一排版 */
+.tech-feature-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+.tech-feature-list li {
+  list-style: none !important;
+  padding: 10px 12px;
+  margin: 6px 0;
+  border-radius: 8px;
+  background-color: #F8F5F2;
+  border: none !important;
+  box-shadow: 0 1px 3px rgba(232, 196, 196, 0.1);
+}
+
+/* 标题样式 */
+.tech-main-title {
+  color: #4A3F35 !important;
+}
+.tech-subtitle {
+  color: #4A3F35 !important;
+}
+
+/* 描述文本样式 */
+.tech-desc {
+  color: #666666 !important;
+  line-height: 1.8 !important;
+}
+
+/* 按钮样式 */
+.tech-btn {
+  background-color: #B9E9D4!important;
+  border: none !important;
+  color: #5D4037 !important;
+  border-radius: 8px !important;
+  padding: 10px 24px !important;
+}
+
+/* 图片容器样式 */
+.tech-image-container {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(232, 196, 196, 0.18);
+  border: 1px solid #FAF9F7;
+}
+
+/* 页脚样式 */
+.tech-footer {
+  background-color: #000000 !important; /* 纯黑色页脚 */
+}
+
+/* 响应式调整 */
+@media (max-width: 992px) {
+  .tech-card .row {
+    flex-direction: column;
+  }
+  
+  .tech-card .col-lg-6 {
+    margin-bottom: 24px;
+  }
+
+  .tech-card {
+    padding: 0 !important;
+  }
+  
+  .tech-card .card-body {
+    padding: 20px 16px !important;
+  }
+}

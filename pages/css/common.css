@@ -1,0 +1,43 @@
+/* 全局基础样式 - 所有页面共用 */
+body {
+  padding-top: 80px; /* 给固定导航栏留出空间 */
+  background-color: #FAF9F7 !important; /* 统一米白色背景 */
+}
+.py-8 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+.mt-10 {
+  margin-top: 5rem !important;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+/* 卡片悬停效果 */
+.video-card {
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* 关键修改：精准命中导航栏容器，覆盖Bootstrap默认样式 */
+.navbar.fixed-top.bg-white {
+  background-color: #FAF9F7 !important; /* 强制米白色，优先级拉满 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 保留轻微阴影，区分页眉和内容 */
+  border: none !important; /* 去掉可能的边框，更纯净 */
+}
+
+/* 页眉文字大小调整（所有页面生效） */
+.navbar-brand .fw-bold.fs-4 {
+  font-size: 1.8rem !important; /* 品牌名调大 */
+}
+.navbar-brand .fs-7 {
+  font-size: 0.9rem !important; /* 副标题调大 */
+}
